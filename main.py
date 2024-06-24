@@ -14,12 +14,10 @@ def do():
     delay = os.getenv('DELAY')
     sender = send.Send(token)
     
-    
-    if not test:
-        # 随机延期执行 30分钟-120分钟
-        delay = random.randint(1800*delay, 7200)
-        print(f"{round(delay/60, 1)}分钟后开始执行")
-        time.sleep(delay)
+    # 随机延期执行 30分钟-120分钟
+    delay_time = random.randint(1800*delay, 7200)
+    print(f"{round(delay_time/60, 1)}分钟后开始执行")
+    time.sleep(delay_time)
     if quark_ck:
         cookie_quark = [quark_ck]
         msg = ""
@@ -37,11 +35,10 @@ def do():
             i += 1
         print(msg)
         sender.tg_send(chat_id, msg)
-    if not test:
-        # 随机延期执行 30分钟-120分钟
-        delay = random.randint(1800, 7200)
-        print(f"{round(delay/60, 1)}分钟后开始执行")
-        time.sleep(delay)
+    # 随机延期执行 30分钟-120分钟
+    delay_time = random.randint(1800*delay, 7200)
+    print(f"{round(delay_time/60, 1)}分钟后开始执行")
+    time.sleep(delay_time)
     if jd_ck:
         cookie_jd = [jd_ck]
         msg = ""
