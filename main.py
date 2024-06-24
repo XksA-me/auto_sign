@@ -12,7 +12,7 @@ def do():
     chat_id = os.getenv('CHAT_ID')
     quark_ck = os.getenv('QUARK_COOKIE')
     jd_ck = os.getenv('JD_COOKIE')
-    delay = os.getenv('DELAY')
+    delay = int(os.getenv('DELAY'))
     sender = send.Send(token)
     
     # 随机延期执行 30分钟-120分钟
