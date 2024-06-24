@@ -17,7 +17,7 @@ def do():
     sender = send.Send(token)
     
     # 随机延期执行 30分钟-120分钟
-    delay_time = random.randint(1800*delay, 7200)
+    delay_time = random.randint(1800*delay, 7200*delay)
     print(f"{round(delay_time/60, 1)}分钟后开始执行")
     time.sleep(delay_time)
     if quark_ck:
@@ -38,7 +38,7 @@ def do():
         print(msg)
         sender.tg_send(chat_id, msg)
     # 随机延期执行 30分钟-120分钟
-    delay_time = random.randint(1800*delay, 7200)
+    delay_time = random.randint(1800*delay, 7200*delay)
     print(f"{round(delay_time/60, 1)}分钟后开始执行")
     time.sleep(delay_time)
     if jd_ck:
