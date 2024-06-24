@@ -1,4 +1,4 @@
-name: quark_auto_sign
+name: auto_sign
 on:
   schedule:
     - cron: 0 16 * * *
@@ -13,7 +13,10 @@ jobs:
     env:
       CHAT_ID: ${{secrets.CHAT_ID}}
       TOKEN: ${{secrets.TOKEN}}
-      COOKIE: ${{ secrets.COOKIE }}
+      QUARK_COOKIE: ${{ secrets.QUARK_COOKIE }}
+      JD_COOKIE: ${{ secrets.JD_COOKIE }}
+      TEST: ${{secrets.TEST}}
+      
     steps:
       - name: install-python
         uses: actions/checkout@v4
@@ -24,4 +27,4 @@ jobs:
 
       - name: sign in
         run: |
-          python main.py --cookie "${{ env.COOKIE }}"
+          python main.py
