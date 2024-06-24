@@ -1,7 +1,7 @@
 # quark_auto_sign
-**本项目基于：**[quark_auto_sign](https://github.com/mushichou/quark_auto_sign)
+**本项目基于：** [quark_auto_sign](https://github.com/mushichou/quark_auto_sign)
 
-**目前已添加：**夸克网盘、京东豆自动签到
+**目前已添加：** 夸克网盘、京东豆自动签到
 
 ## 运行项目
 
@@ -32,3 +32,8 @@
 ## 赞赏
 
 <img src=static/image-20240624184241427.png width=288/>
+
+## 感谢
+
+- [quark_auto_sign](https://github.com/mushichou/quark_auto_sign)
+- [Sign](https://github.com/Litre-WU/Sign)
