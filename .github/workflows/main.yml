@@ -18,7 +18,7 @@ jobs:
       TOKEN: ${{secrets.TOKEN}}
       QUARK_COOKIE: ${{ secrets.QUARK_COOKIE }}
       JD_COOKIE: ${{ secrets.JD_COOKIE }}
-      TEST: ${{secrets.TEST}}
+      DELAY: ${{secrets.DELAY}}
       
     steps:
       - name: install-python
