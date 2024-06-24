@@ -25,6 +25,3 @@ jobs:
       - name: sign in
         run: |
           python main.py --cookie "${{ env.COOKIE }}"
-    
-    
-
